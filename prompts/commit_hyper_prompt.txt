@@ -1,0 +1,26 @@
+Given the text below write me a csv file that contains the POSITION ranking of the player, REGIONAL ranking of the player, and STATE ranking of the player. Only include the Positional, regional and state rankings of columns.  The position ranking should not be the position the player plays; but rather the rank given to the player at that position
+
+Example Structure in Text:
+* The number appearing before "POSITION" is the position ranking.
+* The number appearing before "REGIONAL" is the regional ranking.
+* The numberappearing before "STATE" is the state ranking.
+* 
+CSV Formatting:
+
+Create a CSV formatted string where:
+* Each line represents a row.
+* Each value within a row is separated by a comma.
+* Include only the columns for POSITION ranking, REGIONAL ranking, and STATE ranking.
+* In cases where data is not available, use 'None' to fill those cells.
+
+Instructions: Do not build code that does this. Just structure the text as you see it within the conditions layed out above. Ensure that the output is a single large string where each line represents a row in a CSV type format, and each value within a row is separated by a comma. 
+In the event there is no data fill the string with None values for the columns. 
+
+COLUMN NAMES: Pos_rank, Reg_rank, State_rank
+
+
+
+Text:
+
+
+<<raw_html>>

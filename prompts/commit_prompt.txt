@@ -1,0 +1,61 @@
+Given the text below write me a csv file that contains for each player, the name, pos, city, state, height, weight, stars, grade, and university:  
+
+Instructions: Do not build code that does this. Just structure the text as you see it within the conditions layed out above. Ensure that the output is a single large string where each line represents a row in a CSV type format, and each value within a row is separated by a comma. 
+IMPORTANT: IN THE EVENT THERE IS NO DATA FILL THE STRING WITH NONE VALUES FOR THE COLUMNS.
+
+Think and use semantics when strucing the data. If for instance any value does not align with its column name adjust it to where it needs to be.
+
+For example: Semantically speaking ; A pos is not a grade. A city is not a pos and height is not strcutred as weight. Ensure semantics hold
+             when building the data.
+
+
+WHAT IS NOT ACCEPTABLE: SEMANTICS ARE EVERYTHING. A HIGHSCHOOL IS NOT A GRADE. CHECK EVERY COLUMN PRIOR TO SENDING BACK AND THEN SEND BACK WHAT should
+                        BE RETURNED
+
+
+           Name  Pos             City State  Height  Weight   Grade   
+0  A.J. Morosco  ILB    Daytona Beach    FL   6'1''     225     70      
+1     Nick Lind   RB  Highlands Ranch    CO  5'10''     205     62     
+
+
+WHAT IS NOT ACCEPTABLE: SEMANTICS ARE EVERYTHING. A UNIVERSITY IS NOT A GRADE. CHECK EVERY COLUMN PRIOR TO SENDING BACK AND THEN SEND BACK WHAT SHOULD 
+                        BE RETURNED. DO NOT CONFUSE STARS AND GRADE!!!!!!!! ENSURE POS IS A FOOTBALL POSITION BECAUSE IT IS NOT A CITY, JUST AS A CITY IS NOT A STATE. 
+
+               Name  Pos          City State  Height  Weight     Grade  
+0   Jasper Williams  ILB       Suwanee    GA   6'1''   210.0      55                
+1       Brett Skene   WR        Denver    CO   6'1''   190.0      78                
+2   Stephen Shaffer   TE        Austin    TX   6'3''   235.0      NaN          
+3     Phillip Ofili    S       Cypress    TX   6'1''   185.0      64                  
+5   Brent McElfresh   WR  Stephenville    TX   6'1''   180.0      NaN                 
+6    Ronnie Lillard  ILB  Lehigh Acres    FL   6'3''   200.0      69                 
+7       Steve Jones   CB   Kansas City    MO   NaN     NaN        NaN                         
+8        Chad Gross    K       Suwanee    GA   NaN     NaN        NaN                     
+9      Irvin George   RB       Orlando    FL  5'11''   190.0      NaN                
+10  P.J. Adeji-Paul    S         Tulsa    OK   6'0''   180.0      64                 
+11         Jeff Abt   QB       Houston    TX   6'2''   190.0      75              
+
+
+
+
+FINALLY ONE OF THE MOST IMPORTANT INSTURCTIONS IS THE ORDER IN WHICH YOU WILL BE ABLE TO FIND THE INFOMATION. BELOW IS THE PATTERN THAT EACH PLAYER WILL HAVE.
+SOMETIMES NUMBERS WILL BE NEXT TO EACH OTHER. YOU NEED TO IDENTIFY WHEN THINGS ARE THERE. FOR INSTANCE GRADES ARE ONLY NUMBERS 50 AND ABOVE OR THEY DONT EXIST. GRADES
+ARE DOUBLE DIGIT NUMBERS SO YOU WILL NEED TO BE SMART ABOUT WHAT IS WHAT. UNIVERSITY MUST BE A COLLEGE NAME 
+
+RULES TO NOT BREAK:
+
+1. Below is the acceptable columns names. Each should have its respective semantically sound 
+
+NAME POS CITY HT WT	GRADE	
+
+
+
+
+Example of what should be returned:	
+
+"Name,Pos,City,State,Height,Weight,Grade \nA.J. Morosco,ILB,Daytona Beach,FL,6'1'',225,70,Air Force  \nNick Lind,RB,Highlands Ranch,CO,5'10'',205,62,Air Force"
+
+
+
+Text:
+
+<<raw_html>>

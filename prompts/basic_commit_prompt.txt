@@ -1,0 +1,9 @@
+Given the text below write me a csv file that contains for each player, the name, pos, city, state, height, weight, stars, grade, and university:  
+
+Instructions: Do not build code that does this. Just structure the text as you see it within the conditions layed out above. Ensure that the output is a single large string where each line represents a row in a CSV type format, and each value within a row is separated by a comma. 
+In the event there is no data fill the string with None values for the columns. 
+
+
+Text:
+
+<<raw_html>>
